@@ -17,11 +17,6 @@ function openChapter(filename, n) {
         })
         .catch((e) => console.error(e));
 }
-     
-document.getElementById('left-button-panel').addEventListener('click', openChapterPrevious);
-      
-document.getElementById('right-button-panel').addEventListener('click', openChapterNext);
-
 
 function openChapterNext() {
     page += page >= 32 ? 0 : 1
