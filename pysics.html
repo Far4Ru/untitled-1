@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Конспект</title>
+
+        <!-- katex -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        
+        <!-- marked -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <h1 id="main-title">Конспект</h1>
+        <div id="left-button-panel"></div>
+        <div class="content">
+            <div class="left-panel">
+                <h2>Физика</h2>
+                <details>
+                    <summary>Содержание</summary>
+                <ol id="table-of-contents">
+                    <li onclick="openChapter('physics/1.MD', 1)">Закон Кулона. Напряжённость электростатического поля</li>
+                    <li onclick="openChapter('physics/2.MD', 2)">Поток вектора напряжённости электростатического поля. Теорема Гаусса для вектора E</li>
+                    <li onclick="openChapter('physics/3.MD', 3)">Примеры расчёта полей бесконечной плоскости, заряжённой сферы, шара</li>
+                    <li onclick="openChapter('physics/4.MD', 4)">Потенциал электростатического поля</li>
+                    <li onclick="openChapter('physics/5.MD', 5)">Взаимосвязь между напряжённостью и потенциалом</li>
+                    <li onclick="openChapter('physics/6.MD', 6)">Теорема о циркуляции вектора E</li>
+                    <li onclick="openChapter('physics/7.MD', 7)">Постоянный электрический ток. Сила тока. Вектор плотности тока. Закон Ома в интегральной и дифференциальной формах</li>
+                    <li onclick="openChapter('physics/8.MD', 8)">Магнитное поле в вакууме. Вектор магнитной индукции</li>
+                    <li onclick="openChapter('physics/9.MD', 9)">Закон Био-Савара-Лапласа. Индукция магнитного поля прямолинейного проводника с током. Поле кругового тока</li>
+                    <li onclick="openChapter('physics/10.MD', 10)">Сила Лоренса. Закон Ампера</li>
+                    <li onclick="openChapter('physics/11.MD', 11)">Поток вектора магнитной индукции. Теорема о циркуляции вектора В. Закон полного тока. Теорема Гаусса для индукции магнитного поля</li>
+                    <li onclick="openChapter('physics/12.MD', 12)">Магнитное поле соленоида и тороида</li>
+                    <li onclick="openChapter('physics/13.MD', 13)">Явление электромагнитной индукции. Закон Фарадея-Ленца</li>
+                    <li onclick="openChapter('physics/14.MD', 14)">Явление самоиндукции. Индуктивность контура. Взаимная индукция. Трансформатор</li>
+                    <li onclick="openChapter('physics/15.MD', 15)">Уравнения Максвелла в интегральной форме для вакуума</li>
+                    <li onclick="openChapter('physics/16.MD', 16)">Электромагнитные волны. Свойства электромагнитных волн</li>
+                    <li onclick="openChapter('physics/17.MD', 17)">Тепловое излучение. Понятие об абсолютно чёрном теле. Закон Кирхгофа. Закон Стефана-Больцмана. Закон смещения Вина. Ультрафиолетовая катастрофа</li>
+                    <li onclick="openChapter('physics/18.MD', 18)">Гипотеза Планка. Формула Планка для излучения абсолютно чёрного тела</li>
+                    <li onclick="openChapter('physics/19.MD', 19)">Внешний фотоэффект. Законы фотоэффекта. Формула Эйнштейна для фотоэффекта</li>
+                    <li onclick="openChapter('physics/20.MD', 20)">Корпускулярно-волновой дуализм микрообъектов. Гипотеза де Бройля. Волны де Бройля</li>
+                    <li onclick="openChapter('physics/21.MD', 21)">Соотношение неопределённостей Гейзенберга. Следствия соотношения неопределённостей Гейзенберга</li>
+                    <li onclick="openChapter('physics/22.MD', 22)">Волновая функция. Уравнение Шредингера для свободной частицы</li>
+                    <li onclick="openChapter('physics/23.MD', 23)">Строение атома по Резерфорду. Постулаты Бора. Теория Бора для атома водорода и водородоподобных ионов</li>
+                    <li onclick="openChapter('physics/24.MD', 24)">Квантовые числа. Пространственное квантование </li>
+                    <li onclick="openChapter('physics/25.MD', 25)">Принцип Паули</li>
+                    <li onclick="openChapter('physics/26.MD', 26)">Зонная теория твёрдых тел. Металлы, диэлектрики. Полупроводники. Проводники p и n типов</li>
+                    <li onclick="openChapter('physics/27.MD', 27)">Уровень Ферми. Контактная разность потенциалов. Термоэлектричество. P-n переход</li>
+                    <li onclick="openChapter('physics/28.MD', 28)">Спонтанное излучение. Лазеры</li>
+                    <li onclick="openChapter('physics/29.MD', 29)">Строение атомного ядра</li>
+                    <li onclick="openChapter('physics/30.MD', 30)">Дефект массы. Удельная энергия связи нуклонов в ядре. Ядерные силы</li>
+                    <li onclick="openChapter('physics/31.MD', 31)">Радиоактивность. Закон радиоактивного распада</li>
+                    <li onclick="openChapter('physics/32.MD', 32)">Термоядерная реакция</li>
+                </ol>
+                </details>
+            </div>
+            <div id="content"></div>
+        </div>
+        <div id="right-button-panel"></div>
+    </body>
+    <script src="index.js">
+    </script>
+</html>
