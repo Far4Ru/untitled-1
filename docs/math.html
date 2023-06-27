@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Конспект</title>
+
+        <!-- katex -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        
+        <!-- marked -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <h1 id="main-title">Конспект</h1>
+        <div id="left-button-panel" onclick="openChapterPrevious()"></div>
+        <div class="content">
+            <div class="left-panel">
+                <h2>Математика</h2>
+                <details>
+                    <summary>Содержание</summary>
+                <ol id="table-of-contents">
+                    <li onclick="openChapter('math/1.MD', 1)">Функции двух переменных, определение, область определения, способы задания. Частное и полное приращение функции</li>
+                    <li onclick="openChapter('math/2.MD', 2)">Функции нескольких переменных. Градиент и производная по направлению.</li>
+                    <li onclick="openChapter('math/3.MD', 3)">Частные производные функции двух переменных первого и второго порядков. Определение. Теорема Шварца.</li>
+                    <li onclick="openChapter('math/4.MD', 4)">Экстремум функции двух переменных</li>
+                    <li onclick="openChapter('math/5.MD', 5)">Наибольшее и наименьшее значение функции двух переменных</li>
+                    <li onclick="openChapter('math/6.MD', 6)">Первообразная функция и неопределенный интеграл, определения и теорема о первообразных.</li>
+                    <li onclick="openChapter('math/7.MD', 7)">Неопределенный интеграл. Определение. Свойства.</li>
+                    <li onclick="openChapter('math/8.MD', 8)">Неопределенный интеграл. Интегрирование рациональных дробей.</li>
+                    <li onclick="openChapter('math/9.MD', 9)">Методы интегрирования: непосредственное интегрирование, интегрирование по частям и замена переменной в неопределенном интеграле.</li>
+                    <li onclick="openChapter('math/10.MD', 10)">Определенный интеграл. Определение, геометрический смысл и свойства</li>
+                    <li onclick="openChapter('math/11.MD', 11)">Определенный интеграл. Формула Ньютона — Лейбница</li>
+                    <li onclick="openChapter('math/12.MD', 12)">Интегрирование по частям и замена переменной в определенном интеграле</li>
+                    <li onclick="openChapter('math/13.MD', 13)">Вычисление площадей плоских фигур с помощью определённого интеграла</li>
+                    <li onclick="openChapter('math/14.MD', 14)">Несобственные интегралы. Виды, определения.</li>
+                    <li onclick="openChapter('math/15.MD', 15)">Несобственный интеграл второго рода. Определение. Признаки сходимости.</li>
+                    <li onclick="openChapter('math/16.MD', 16)">Несобственный интеграл первого рода. Определение. Признак сравнения</li>
+                    <li onclick="openChapter('math/17.MD', 17)">Дифференциальные уравнения первого порядка, определение и основные понятия. Теорема о существовании и единственности задачи Коши.</li>
+                    <li onclick="openChapter('math/18.MD', 18)">Дифференциальные уравнения I порядка с разделяющимися переменными.</li>
+                    <li onclick="openChapter('math/19.MD', 19)">Однородные и линейные уравнения I порядка.</li>
+                    <li onclick="openChapter('math/20.MD', 20)">Дифференциальные уравнения второго порядка. Определение и основные понятия. Уравнения, допускающие понижение порядка.</li>
+                    <li onclick="openChapter('math/21.MD', 21)">Линейные дифференциальные уравнения второго порядка с постоянными коэффициентами. Структура общего решения линейного однородного ДУ.</li>
+                    <li onclick="openChapter('math/22.MD', 22)">Линейные неоднородные уравнения второго порядка с постоянными коэффициентами. Структура общего решения и метод решения по виду правой части.</li>
+                    <li onclick="openChapter('math/23.MD', 23)">Числовые ряды. Определение. Достаточные признаки сходимости (признаки сравнения, интегральный признак и признак Даламбера)</li>
+                    <li onclick="openChapter('math/24.MD', 24)">Числовые ряды. Определение. Сходимость. Необходимый признак сходимости числового ряда.</li>
+                    <li onclick="openChapter('math/25.MD', 25)">Знакоположительные ряды. Определение. Достаточные признаки сходимости.</li>
+                    <li onclick="openChapter('math/26.MD', 26)">Знакочередующиеся ряды. Теорема Лейбница, абсолютная и условная сходимость.</li>
+                    <li onclick="openChapter('math/27.MD', 27)">Степенной ряд, определение, область и радиус сходимости</li>
+                </ol>
+                </details>
+            </div>
+            <div id="content"></div>
+        </div>
+        <div id="right-button-panel" onclick="openChapterNext()"></div>
+    </body>
+    <script src="index.js">
+    </script>
+</html>
