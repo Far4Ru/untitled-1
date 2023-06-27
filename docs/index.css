@@ -16,10 +16,10 @@ body {
 }
 
 #main-title {
-    padding-left: 4%;
-    padding-bottom: 2%;
-    padding-top: 2%;
+    padding: 2% 4% 2% 4%;
     color: darkgrey;
+    display: inline-block;
+    width: 15%;
 }
 
 #left-button-panel {
@@ -39,7 +39,7 @@ body {
 }
 
 #table-of-contents {
-    cursor:pointer
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -47,4 +47,22 @@ body {
         width: 100%;
         margin-left: 0%;
     }  
+}
+
+.menu-title {
+    width: 13%;
+    display: inline-block;
+    font-size: 1.4em;
+    padding: 2% 1% 2% 1%;
+    cursor: pointer;
+}
+.highlight {
+    color: lightgrey;
+}
+.unhighlight {
+    color: darkgrey;
+}
+#menu-block {
+    width: 54%;
+    display: inline-block;
 }
