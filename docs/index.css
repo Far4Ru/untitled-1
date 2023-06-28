@@ -41,14 +41,6 @@ body {
 #table-of-contents {
     cursor: pointer;
 }
-
-@media (max-width: 900px) {
-    .content {
-        width: 100%;
-        margin-left: 0%;
-    }  
-}
-
 .menu-title {
     display: inline-block;
     font-size: 1.4em;
@@ -64,4 +56,13 @@ body {
 #menu-block {
     width: 54%;
     display: inline-block;
+}
+@media (max-width: 900px) {
+    .content {
+        width: 100%;
+        margin-left: 0%;
+    }  
+    #menu-block {
+        width: 75%;
+    }  
 }
