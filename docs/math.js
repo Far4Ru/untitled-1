@@ -19,7 +19,7 @@ function openChapter(filename, n) {
 }
 
 function openChapterNext() {
-    page += page >= 32 ? 0 : 1
+    page += page >= 27 ? 0 : 1
     openChapter('math/' + page + '.MD', page)
 }
 function openChapterPrevious() {
