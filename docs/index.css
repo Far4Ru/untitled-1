@@ -65,6 +65,22 @@ body {
     #menu-block {
         width: 75%;
     }  
+
+    #left-button-panel {
+        position: fixed;
+        height: 70%;
+        width: 23%;
+        top: 30%;
+        left: 0;
+    }
+    
+    #right-button-panel {
+        position: fixed;
+        height: 70%;
+        width: 23%;
+        top: 30%;
+        right: 0;
+    }
 }
 
 blockquote {
